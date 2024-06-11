@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+:root {
+  --primary: #fefefe;
+  --secondary: #e32422;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5%;
+  background-color: var(--secondary);
+  align-items: center;
+}
+
+nav .navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav img {
+  width: 150px;
+  padding-right: 5rem;
+}
+
+nav .navigation a {
+  margin: 0 1rem;
+  color: white;
+  font-size: 0.8rem;
+}
+
+nav .navigation a:hover {
+  content: "";
+  border-bottom: 0.1rem solid white;
+  transition: 0.3s;
+}
+
+nav .login {
+  background-color: var(--primary);
+  padding: 0.5rem 0.8rem;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .login a {
+  color: var(--secondary);
+  font-size: 0.9rem;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+}
+
+.slides {
+  /* overflow: hidden; */
+}
+
+.carousel .inner-carousel {
+  display: flex;
+}
+
+.carousel .inner-carousel img {
+  width: 100%;
+}
+
+.carousel .slides .carousel-nav {
+  display: none;
+}
+
+.carousel .manual-nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
+  width: 100%;
+}
+
+.carousel .manual-nav .btn-nav {
+  border-radius: 50%;
+  border: 1px solid var(--secondary);
+  width: 1rem;
+}
