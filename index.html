@@ -7,12 +7,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="script.js"></script>
   </head>
   <body>
     <!-- NAVBAR START -->
     <nav class="nav">
       <div class="navigation">
-        <img src="image/logo.png" alt="logo" />
+        <img src="image/Logo PNG.png" alt="logo" />
         <a href="#">Home</a>
         <a href="#">Help Center</a>
       </div>
@@ -25,19 +26,32 @@
     <!-- CAROUSEL START -->
     <div class="carousel">
       <div class="slides">
-        <div class="inner-carousel">
-          <img src="image/slide1.jpg" alt="slide1" />
-          <img src="image/slide2.jpg" alt="slide2" />
+        <!-- Radio Button -->
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <!-- Radio Button -->
+
+        <!-- Img -->
+
+        <img src="image/carousel 1.jpeg" alt="carousel1" class="slide1" />
+
+        <img src="image/carousel 2.jpeg" alt="carousel2" class="slide" />
+
+        <!-- Img -->
+
+        <!-- Automatic Navigation -->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
         </div>
-        <div class="carousel-nav">
-          <input type="radio" name="radio-btn" id="radio1" />
-          <input type="radio" name="radio-btn" id="radio2" />
-        </div>
+        <!-- Automatic Navigation -->
       </div>
-      <div class="manual-nav">
-        <label for="radio1" class="btn-nav"></label>
-        <label for="radio2" class="btn-nav"></label>
+      <!-- Manual Navigation -->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
       </div>
+      <!-- Manual Navigation -->
     </div>
     <!-- CAROUSEL END -->
   </body>

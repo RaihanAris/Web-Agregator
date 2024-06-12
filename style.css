@@ -47,8 +47,8 @@ nav .navigation a:hover {
 
 nav .login {
   background-color: var(--primary);
-  padding: 0.5rem 0.8rem;
-  border-radius: 10%;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,35 +61,53 @@ nav .login a {
 
 /* Carousel */
 .carousel {
+  /* width: 100%; */
+  overflow: hidden;
   position: relative;
 }
 
-.slides {
-  /* overflow: hidden; */
-}
-
-.carousel .inner-carousel {
+.carousel .slides {
+  /* width: 100%; */
   display: flex;
 }
 
-.carousel .inner-carousel img {
-  width: 100%;
-}
-
-.carousel .slides .carousel-nav {
+.carousel .slides input {
   display: none;
 }
 
-.carousel .manual-nav {
+.carousel .slides img {
+  width: 100%;
+  transition: 1s;
+}
+
+.navigation-manual {
   position: absolute;
   display: flex;
   justify-content: center;
-  margin-top: -40px;
+  margin-top: -20px;
   width: 100%;
 }
 
-.carousel .manual-nav .btn-nav {
-  border-radius: 50%;
-  border: 1px solid var(--secondary);
-  width: 1rem;
+.manual-btn {
+  border: 2px solid var(--primary);
+  padding: 3px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+/* .manual-btn:not(:last-child) {
+  margin-right: 10px;
+} */
+
+.manual-btn:hover {
+  background-color: var(--primary);
+}
+
+#radio1:checked ~ .slide1 {
+  margin-left: 0;
+}
+#radio2:checked ~ .slide1 {
+  margin-left: -100%;
 }
